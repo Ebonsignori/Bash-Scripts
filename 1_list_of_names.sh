@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-#declare -a name_array=("grace" "evan" "longname" "bob" "nral")
-
-
 ## Prompt and read in array of names separated by spaces
 echo "Enter a list of names separated by characters."
 read -a name_array
