@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#!/usr/bin/env bash
-
 ## Initialize variables
 declare -a number_post_fixes=("st" "nd" "rd" "th")
 declare -a suits=("Spades" "Hearts" "Diamonds" "Clubs")
