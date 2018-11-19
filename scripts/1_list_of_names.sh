@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ## Prompt and read in array of names separated by spaces
-echo "Enter a list of names separated by characters."
+echo "Enter a list of names separated by spaces."
 read -a name_array
 
 ## If the user didn't enter anything, prompt until they do
@@ -15,22 +15,15 @@ done
 
 ## Initialize variables
 declare -i var=0
-declare -a number_post_fixes=("st" "nd" "rd" "th")
 largest_name=""
 declare -i largest_count=0
 
 ## Loop through each name
 for name in "${name_array[@]}"
 do
-    ## Get current number post_fix
-    if [[ "$var" -lt 4 ]]
-    then
-      post_fix=${number_post_fixes[${var}]}
-    fi
-
     ## Increment and print results
     var+=1
-    echo "$name is the ${var}${post_fix} name in the list with ${#name} characters"
+    echo "$name is the number ${var} name in the list with ${#name} characters"
 
     if [[ "${#name}" -gt ${largest_count} ]]
     then
